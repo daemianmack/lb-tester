@@ -3,6 +3,6 @@ jdk: oraclejdk8
 notifications:
   email: false
 before_install:
-- pip install --user awscli
+- pip install --user awsebcli
 - export PATH=$PATH:$HOME/.local/bin
 script: travis
