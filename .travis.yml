@@ -1,0 +1,8 @@
+language: clojure
+jdk: oraclejdk8
+notifications:
+  email: false
+before_install:
+- pip install --user awscli
+- export PATH=$PATH:$HOME/.local/bin
+script: travis

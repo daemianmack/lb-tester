@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+
+
+CURRENT_BRANCH=${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH}
+
+
+
+if [[ $CURRENT_BRANCH != "master" ]]; then
+    echo "Branch: $CURRENT_BRANCH"
+else
+    echo "Master branch."
+fi
+
+
+echo "============="
+git log
+echo "============="
+
+echo "============="
+git tag
+echo "============="
