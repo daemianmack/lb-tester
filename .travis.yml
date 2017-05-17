@@ -5,4 +5,5 @@ notifications:
 before_install:
 - pip install --user awsebcli
 - export PATH=$PATH:$HOME/.local/bin
+cache: pip
 script: ./travis
